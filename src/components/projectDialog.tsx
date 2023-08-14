@@ -79,8 +79,8 @@ function ProjectDialog({
               </video>
             ) : (
               <div className="italic text-sm text-center font-medium">
-                'Dear visitor, video is yet to uploaded, up intil now no social
-                media post has been made about this project'
+                &apos;Dear visitor, video is yet to uploaded, up intil now no social
+                media post has been made about this project&apos;
               </div>
             )}
           </div>
