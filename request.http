@@ -1,0 +1,6 @@
+POST http://localhost:3000/api/read
+content-type:application/json
+
+{
+    "query":"What makes Mr. fenyman unique?"
+}
