@@ -21,7 +21,7 @@ function Chat() {
   return (
     <div
       className={`fixed inset-x-6 sm:inset-x-auto sm:right-8 sm:bottom-8 bottom-4  shadow-xl    z-50 bg-background  rounded    ${
-        activeChat ? "inset-x-0" : ""
+        activeChat ? "inset-x-2" : ""
       } duration-300 sm:w-96 `}
     >
       <div
