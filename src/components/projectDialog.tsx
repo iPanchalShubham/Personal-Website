@@ -26,8 +26,8 @@ function ProjectDialog({
               {projectContent?.name}
             </DialogTitle>
             <DialogDescription className="h-fit w-full flex justify-center flex-col ">
-              <p>{projectContent?.description}</p>
-              <p className="flex items-center w-full gap-3 mt-2 justify-center ">
+              <span>{projectContent?.description}</span>
+              <span className="flex items-center w-full gap-3 mt-2 justify-center ">
                 <Link href={projectContent.deployment}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function ProjectDialog({
                     <path d="M9 18c-4.51 2-5-2-7-2" />
                   </svg>
                 </Link>
-              </p>
+              </span>
             </DialogDescription>
           </DialogHeader>
           <div className="w-full h-full">

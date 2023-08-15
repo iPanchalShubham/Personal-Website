@@ -1,22 +1,9 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import "./global.css";
 import { Inter } from "next/font/google";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { homeConfig } from "@/config/home";
 import MainNav from "@/components/main-nav";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import signw from "../../public/singnw.png";
 import signb from "../../public/signb.png";
 import Image from "next/image";

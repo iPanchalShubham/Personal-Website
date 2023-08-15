@@ -9,7 +9,7 @@ import OptionsTabs from "./optionsTabs";
 function Herosection() {
   return (
     <div>
-      <div className="">
+      <div >
         <video
           id="background-video"
           loop
