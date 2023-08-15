@@ -45,7 +45,7 @@ function ChatInput({
       },
     ]);
 
-    const res = await fetch("http://localhost:3000/api/read", {
+    const res = await fetch("/api/read", {
       method: "POST",
       body: JSON.stringify({
         query,

@@ -29,7 +29,12 @@ function OptionsTabs() {
 
   const fetchProjectsData = async () => {
     const res = await fetch(
-      "https://api.github.com/repos/ipanchalshubham/reposToFetchForPortfolio/readme"
+      "https://api.github.com/repos/ipanchalshubham/reposToFetchForPortfolio/readme",
+      {
+        next: {
+          revalidate: 60,
+        },
+      }
     );
     await res
       .json()
@@ -46,7 +51,9 @@ function OptionsTabs() {
       <Tabs defaultValue="projects" className="w-full h-full text-base ">
         <div className="space-x-2">
           <TabsList>
-            <TabsTrigger value="projects" className="">Projects</TabsTrigger>
+            <TabsTrigger value="projects" className="">
+              Projects
+            </TabsTrigger>
             <TabsTrigger
               value="open_source"
               className="space-x-0.5 items-center"
@@ -103,7 +110,10 @@ function OptionsTabs() {
           {/* Projects display */}
           <div className="grid grid-cols-1 sm:grid-cols-2   lg:grid-cols-3 gap-4 w-full mt-10 sm:mt-24 justify-center justify-items-center">
             {projects?.map((project) => (
-              <div onClick={() => setProjectContent(project)} key={project.name}>
+              <div
+                onClick={() => setProjectContent(project)}
+                key={project.name}
+              >
                 <ProjectCard
                   dialogHandler={dialogHandler}
                   projectContent={project}
