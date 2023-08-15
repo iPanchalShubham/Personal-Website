@@ -11,6 +11,7 @@ function Card() {
         alt="it's me"
         className="object-contain rounded-lg"
         fill={true}
+        sizes="100%"
       />
     </div>
   </div>

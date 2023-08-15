@@ -18,6 +18,8 @@ const ProjectCard: React.FC<MyComponentProps> = ({ dialogHandler,projectContent 
           className="object-contain rounded-lg"
           fill={true}
           alt="project name"
+          sizes="100%"
+          priority
         />
       </div>
       <div className="text-center items-center font-bold  mt-2">
