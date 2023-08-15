@@ -1,14 +1,14 @@
 module.exports = {
   // reactStrictMode: true,
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: 'https',
-  //       hostname: "**",
-  //       port: '',
-  //     },
-  //   ],
-  // },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: "**",
+        port: '',
+      },
+    ],
+  },
   // webpack: (config) => {
   //   config.module.rules.push({
   //     test: /\.pdf$/,
