@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { fetchEventSource } from "@microsoft/fetch-event-source";
+import React, { useState } from "react";
 import { MsgType } from "../utils";
 import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
