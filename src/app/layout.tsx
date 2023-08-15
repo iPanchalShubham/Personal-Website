@@ -1,3 +1,4 @@
+"use client"
 import { ThemeProvider } from "@/components/theme-provider";
 import "./global.css";
 import { Inter } from "next/font/google";
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <header className="container z-40 bg-background border-b-2 py-2">
